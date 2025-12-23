@@ -3,9 +3,7 @@ name: Automated Preprocessing
 on:
   push:
     branches:
-        - main  
-    paths:
-        - 'winequality-red.csv' # Trigger saat data raw berubah
+        - main
 
 jobs:
   preprocess:
@@ -21,7 +19,7 @@ jobs:
 
       - name: Run a script
         run: echo "Triggered by commit ${{ github.sha }}"
-
+ 
       - name: Install Dependencies
         run: pip install -r requirements.txt
 
