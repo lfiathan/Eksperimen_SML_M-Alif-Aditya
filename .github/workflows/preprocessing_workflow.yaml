@@ -2,10 +2,10 @@ name: Automated Preprocessing
 
 on:
   push:
-  branches: 
-      - main  
-  paths:
-      - 'winequality-red.csv' # Trigger saat data raw berubah
+    branches:
+        - main  
+    paths:
+        - 'winequality-red.csv' # Trigger saat data raw berubah
 
 jobs:
   preprocess:
