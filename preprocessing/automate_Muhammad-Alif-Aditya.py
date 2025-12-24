@@ -4,7 +4,7 @@ import os
 
 def run_automation():
     # Sesuaikan dengan nama file dataset laptop Anda
-    input_file = 'laptop_price_raw.csv' 
+    input_file = 'laptop_price.csv' 
     output_path = 'preprocessing/laptop_sales_preprocessed.csv'
     
     if not os.path.exists(input_file):
