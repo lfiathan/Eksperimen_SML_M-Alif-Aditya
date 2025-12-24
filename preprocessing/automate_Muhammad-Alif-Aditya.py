@@ -11,7 +11,7 @@ def run_automation():
         print(f"Error: File {input_file} tidak ditemukan!")
         return
 
-    df = pd.read_csv(input_file)
+    df = pd.read_csv(input_file, encoding='latin-1')
     
     # A. Menghapus kolom yang tidak relevan
     df = df.drop(['laptop_ID'], axis=1, errors='ignore')
