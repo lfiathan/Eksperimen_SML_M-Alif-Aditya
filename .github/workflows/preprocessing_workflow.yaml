@@ -5,8 +5,8 @@ permissions:
 
 on:
   push:
-    paths:
-      - '**. csv'
+    branches:
+        - main
 
 jobs:
   preprocess:
